@@ -78,4 +78,4 @@ function rle(value) {
 ## Languages:
 
 - Russian - Native
-- English - Intermediate
+- English - А2
