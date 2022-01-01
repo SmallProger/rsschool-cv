@@ -74,3 +74,8 @@ function rle(value) {
 
 - Basic course CSS and HTML on [ru.code-basics.com](https://ru.code-basics.com/languages/html)
 - JavaScript Manual on [learn.javascript.ru](https://learn.javascript.ru/)
+
+## Languages:
+
+- Russian - Native
+- English - Intermediate
