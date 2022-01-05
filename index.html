@@ -8,7 +8,7 @@
   </head>
   <body>
     <main class="main">
-      <section class="left_info">
+      <div class="left_info">
         <div class="left_info__content">
           <header class="header">
             <div class="header__photo">
@@ -54,16 +54,18 @@
             ><img src="sources/rs_school.svg" alt="rs logo"
           /></a>
         </div>
-      </section>
-      <section class="right_info">
-        <span class="fas fa-bars menu"></span>
+      </div>
+      <div class="right_info">
+        <span class="menu"><img src="sources/menu2.jpg" alt="my photo" /></span>
         <nav class="nav_hidden">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#example_code">Example code</a></li>
-          <li><a href="#about_me">About me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#example_code">Example code</a></li>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
         </nav>
         <article class="right_info__wrapper">
           <h2 id="about_me" class="right_info__wrapper__heading">Aboute me</h2>
@@ -143,7 +145,7 @@ function rle(value) {
           </ul>
         </article>
         <div class="right_info__year">2022</div>
-      </section>
+      </div>
     </main>
     <script src="js/code.js"></script>
   </body>
