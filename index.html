@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>CV</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <main class="main">
+      <div class="left_info">
+        <div class="left_info__content">
+          <header class="header">
+            <div class="header__photo">
+              <img src="sources/my_photo.jpg" alt="my photo" />
+            </div>
+            <h1 class="header__name">Kirill <strong>Zubkov</strong></h1>
+            <span class="header__profession">Aspiring frontend developer</span>
+            <ul class="header__contacts">
+              <li id="contact-1">kirya.zubkov.98@list.ru</li>
+              <li id="contact-2">https://github.com/SmallProger</li>
+              <li id="contact-3">xola_xoop</li>
+            </ul>
+          </header>
+          <article class="left_info__wrapper">
+            <h2 id="skills" class="left_info__wrapper__heading">Skills</h2>
+            <ul class="left_info__wrapper__inner">
+              <li>JS</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>Git</li>
+            </ul>
+          </article>
+          <article class="left_info__wrapper">
+            <h2 id="languages" class="left_info__wrapper__heading">
+              Languages
+            </h2>
+            <ul class="left_info__wrapper__inner">
+              <li>English A2</li>
+              <li>Russian native</li>
+            </ul>
+          </article>
+          <article class="left_info__wrapper">
+            <h2 id="education" class="left_info__wrapper__heading">
+              Education
+            </h2>
+            <ul class="left_info__wrapper__inner">
+              <li>MAI (2019-2023)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <div class="right_info">
+        <span class="menu"><img src="sources/menu2.jpg" alt="my photo" /></span>
+        <nav class="nav_hidden">
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#example_code">Example code</a></li>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+          </ul>
+        </nav>
+        <article class="right_info__wrapper">
+          <h2 id="about_me" class="right_info__wrapper__heading">Aboute me</h2>
+          <p>
+            I'm a third-year strudent of Moscow Aviation Institute. Studing at a
+            technical university in the first years is really hard, but i think,
+            that my perseverence helped me, by the way, i liked mathematics, I
+            think it is good for programmer. Why I decided to start programming?
+            As a kid I loved character - "Iron man", and now every time I
+            program I imagine myself to be him. Why not ?) I think it's very
+            cool to be able to solve abstract problems without leaving the
+            keyboard.
+          </p>
+        </article>
+        <article class="right_info__wrapper">
+          <h2 id="example_code" class="right_info__wrapper__heading">
+            Example code
+          </h2>
+          <pre>
+function isAlreadePushed(symb, arr) {
+  for (let i = 0; i &lt; arr.length; i++) {
+    if (symb == arr[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+                        
+function rle(value) {
+  value = value.split("");
+  let result = [];
+  let counter = 1;
+                        
+  for (let i = 0; i &lt; value.length; i++) {
+    if (!isAlreadePushed(value[i], result)) {
+      result.push(value[i]);
+    } else {
+      if (value[i] != value[i - 1] &&
+       isAlreadePushed(value[i], result)) {
+        result.push(value[i]);
+      }
+      if (value[i] == value[i - 1]) {
+        counter++;
+      }
+      if (value[i] != value[i + 1]) {
+        if (counter != 1) {
+          let index = result.lastIndexOf(value[i]);
+          result[index] = `${counter}${result[index]}`;
+          counter = 1;
+        }
+      }
+    }
+  }
+  return result.join("");
+}
+          </pre>
+        </article>
+        <article class="right_info__wrapper">
+          <h2 id="projects" class="right_info__wrapper__heading">Projects</h2>
+          <ul class="projects">
+            <li class="projects__elem">
+              <a href="https://github.com/SmallProger/my_first_library_on_C"
+                >my_first_library_on_C</a
+              >
+            </li>
+            <li class="projects__elem">
+              <a href="https://github.com/SmallProger/my_CV">my_CV</a>
+            </li>
+            <li class="projects__elem">
+              <a href="https://github.com/SmallProger/Pig_game">Pig_game</a>
+            </li>
+            <li class="projects__elem">
+              <a href="https://github.com/SmallProger/Game_guess_my_number"
+                >Game_guess_my_number</a
+              >
+            </li>
+          </ul>
+        </article>
+        <footer class="footer">
+          <div class="git_logo">
+            <a href="https://github.com/SmallProger">GitHub</a>
+          </div>
+          <div class="rss_logo">
+            <a href="https://rs.school/js/"
+              ><img src="sources/rs_school.svg" alt="rs logo"
+            /></a>
+          </div>
+          <span class="year">2022</span>
+        </footer>
+      </div>
+    </main>
+    <script src="js/code.js"></script>
+  </body>
+</html>
