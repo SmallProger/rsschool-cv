@@ -87,7 +87,7 @@
           </h2>
           <pre>
 function isAlreadePushed(symb, arr) {
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i &lt; arr.length; i++) {
     if (symb == arr[i]) {
       return true;
     }
@@ -100,7 +100,7 @@ function rle(value) {
   let result = [];
   let counter = 1;
                         
-  for (let i = 0; i < value.length; i++) {
+  for (let i = 0; i &lt; value.length; i++) {
     if (!isAlreadePushed(value[i], result)) {
       result.push(value[i]);
     } else {
