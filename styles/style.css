@@ -13,9 +13,10 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 /*<===============left_info===============>*/
 .left_info {
-  width: 31%;
+  flex-basis: 31%;
   display: flex;
   flex-direction: column;
   background-color: #174180;
@@ -89,7 +90,7 @@ body {
 .right_info {
   display: flex;
   flex-direction: column;
-  width: 69%;
+  flex-basis: 69%;
 }
 .right_info__wrapper {
   margin-left: 1.67em;
